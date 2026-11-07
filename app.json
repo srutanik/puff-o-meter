@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Puff-o-meter",
+    "slug": "puff-o-meter",
+    "scheme": ["puffearn", "puffometer", "puff-o-meter-spotify"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8E8"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.puffearn.app",
+      "infoPlist": {
+        "UIRequiresFullScreen": true,
+        "UIApplicationSceneManifest": {
+          "UIApplicationSupportsMultipleScenes": false,
+          "UISceneConfigurations": {
+            "UIWindowSceneSessionRoleApplication": [
+              {
+                "UISceneConfigurationName": "Default Configuration",
+                "UISceneDelegateClassName": "$(PRODUCT_MODULE_NAME).SceneDelegate"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "platforms": [
+      "ios"
+    ],
+    "plugins": [
+      "./plugins/withIos27Scenes",
+      "expo-web-browser",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}
